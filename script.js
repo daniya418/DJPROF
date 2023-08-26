@@ -77,9 +77,9 @@ function changeBackgroundColorOnScroll() {
 
   // Change background color based on the scroll percentage
   if (scrollPercentage < 50) {
-    body.style.backgroundColor = "#f0f0f0"; // Initial color
+    body.style.backgroundColor = "#ffffff"; // Initial color
   } else if (scrollPercentage >= 50 && scrollPercentage < 75) {
-    body.style.backgroundColor = "#ffcc66"; // New color when scrolled more than 50% but less than 75%
+    body.style.backgroundColor = "#ffffff"; // New color when scrolled more than 50% but less than 75%
   } else {
     body.style.backgroundColor = "#010101"; // New color when scrolled more than 75%
     
