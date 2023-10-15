@@ -304,6 +304,12 @@ body {
 
 }
 
+.trust{
+    height: 380px;
+    /* z-index: 0; */
+    bottom: 80px;
+}
+
 .pioneer{
     height: 100px;
     bottom: 20px;
@@ -337,7 +343,7 @@ body {
 }
 
 .bar{
-    height: 400px;
+    height: 340px;
 }
 
 /* .left-column{
@@ -672,7 +678,7 @@ body {
     }
 
     .tab .img-card{
-        max-width:325px ;
+        max-width:350px ;
     }
     .pioneer{
         height: 80px;
@@ -682,13 +688,13 @@ body {
     
     .monitor1{
         height: 200px;
-        left: -80px;
+        left: 2px;
         z-index: 1;
     }
     
     .monitor2{
         height: 200px;
-        right: -80px;
+        right: 2px;
         z-index: 1;
     }
     
@@ -711,10 +717,16 @@ body {
         z-index: 1;
         bottom: -20px;
     }
+
+    .trust{
+        height: 220px;
+        z-index: 0;
+        bottom: 80px;
+    }
     
     .bar{
         height: 200px;
-        top: 15px;
+        top: 65px;
     }
 
     .nav-link{
