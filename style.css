@@ -292,17 +292,22 @@ body {
 }
 
 
-.bar,.beamLeft,.beamRight,.pioneer,.monitor1,.monitor2,.pioneer{
+.bar,.beamLeft,.beamRight,.pioneer,.monitor1,.monitor2,.pioneer,
+.booth{
     position: absolute;
 
 }
 
+.booth{
+    height: 370px;
+    bottom: 0px;
 
+}
 
 .pioneer{
     height: 100px;
-    bottom: 200px;
-
+    bottom: 20px;
+    z-index: 1;
 }
 
 .monitor1{
@@ -398,13 +403,13 @@ body {
 
   .revealRight{
     position: absolute;
-    transform: translateX(20px);
+    transform: translateX(10px);
     opacity: 0;
     transition: all 2s ease;
   }
   .revealLeft{
     position: absolute;
-    transform: translateX(-20px);
+    transform: translateX(-10px);
     opacity: 0;
     transition: all 2s ease;
   }
@@ -645,9 +650,12 @@ body {
 
 @media  screen and (max-width: 610px) {
 
+    .tab{
+        padding: 4px;
+    }
 
     .tab .img-card{
-        max-width:500px ;
+        max-width:400px ;
         height: 300px;
     }
 
@@ -662,29 +670,25 @@ body {
         /* object-fit: cover; */
         /* overflow: hidden; */
     }
-}
-
-@media  screen and (max-width: 510px) {
-
 
     .tab .img-card{
         max-width:325px ;
     }
     .pioneer{
         height: 80px;
-        bottom: 100px;
+        bottom: 20px;
         z-index: 2;
     }
     
     .monitor1{
         height: 200px;
-        left: 20px;
+        left: -80px;
         z-index: 1;
     }
     
     .monitor2{
         height: 200px;
-        right: 20px;
+        right: -80px;
         z-index: 1;
     }
     
@@ -700,6 +704,12 @@ body {
         z-index: 2;
         bottom: 20px;
         right: 50px;
+    }
+
+    .booth{
+        height: 250px;
+        z-index: 1;
+        bottom: -20px;
     }
     
     .bar{
@@ -732,20 +742,21 @@ body {
         font-weight:bold ;
     }
     
-.description p{
+    .description p{
 
-    font-size: 16px;
+        font-size: 16px;
+    }
+
+    .packageIntro, .intro{
+        padding: 20px;
+    }
+
+    .hero>h3{
+        /* top: 55%; */
+        left: 5%;
+        bottom: 10px;
+        font-size: 18px;
+    }
 }
 
-.packageIntro, .intro{
-    padding: 20px;
-}
 
-.hero>h3{
-    /* top: 55%; */
-    left: 5%;
-    bottom: 10px;
-    font-size: 18px;
-}
-
-}
