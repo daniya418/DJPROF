@@ -153,6 +153,11 @@ body {
 
 }
 
+.carousel-item{
+    object-fit: cover;
+    height: 40vh;
+}
+
 
 
 /* Tab Navigation Bar */
@@ -298,16 +303,21 @@ body {
 
 }
 
+.logo{
+    height: 120px;
+    top: 220px;
+
+}
 .booth{
-    height: 370px;
+    height: 330px;
     bottom: 0px;
 
 }
 
 .trust{
-    height: 380px;
+    height: 320px;
     /* z-index: 0; */
-    bottom: 80px;
+    top: 20px;
 }
 
 .pioneer{
@@ -318,13 +328,13 @@ body {
 
 .monitor1{
     height: 300px;
-    left: 20px;
+    left: 40px;
     z-index: 1;
 }
 
 .monitor2{
     height: 300px;
-    right: 20px;
+    right: 40px;
     z-index: 1;
 }
 
@@ -343,7 +353,8 @@ body {
 }
 
 .bar{
-    height: 340px;
+    top: 100px;
+    height: 300px;
 }
 
 /* .left-column{
@@ -591,6 +602,16 @@ body {
     padding: 8px;
 }
 
+#btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    background-color: white;
+    color: #000000;
+    border: none;
+  }
+
 @media screen and (max-width:1050px) {
     section{
         margin: 0 0px;
@@ -680,6 +701,13 @@ body {
     .tab .img-card{
         max-width:350px ;
     }
+
+    .logo{
+        height: 70px;
+        top: 140px;
+        z-index: 1;
+    }
+
     .pioneer{
         height: 80px;
         bottom: 20px;
@@ -725,8 +753,8 @@ body {
     }
     
     .bar{
-        height: 200px;
-        top: 65px;
+        height: 180px;
+        top: 75px;
     }
 
     .nav-link{
