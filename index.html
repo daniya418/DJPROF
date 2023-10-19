@@ -62,12 +62,12 @@
             </li>
 
             <li class="nav-item">
-              <a class="nav-link">Customer Reviews</a>
+              <a class="nav-link" href="#testimonials">Customer Reviews</a>
             </li>
           </ul>
           <ul class="navbar-nav mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link">Contact Me</a>
+              <a class="nav-link" href="#contactArea">Contact Me</a>
             </li>
           </ul>
         </div>
@@ -197,7 +197,7 @@
     <!-- Slider main container -->
 
     <section class="testimonials">
-      <div class="tContainer">
+      <div class="tContainer" id="testimonials">
         <div class="tHeader">
           <h2 class="title">What our clients say</h2>
         </div>
@@ -257,7 +257,7 @@
     >
       Contact US
     </h3>
-    <div class="contactArea">
+    <div class="contactArea" id="contactArea">
       <div class="image1">
         <img src="images/9.jpg" alt="" />
       </div>
@@ -289,20 +289,26 @@
             class="accordion-collapse collapse"
             data-bs-parent="#accordionFlushExample"
           >
-            <form>
-              <div class="mb-3">
-                <label for="name" class="form-label">Name</label>
-                <input type="name" class="form-control" id="name" />
+            <form id="contactForm">
+              <div id="cf" style="padding: 14px">
+                <div class="mb-3">
+                  <label for="name" class="form-label">Name</label>
+                  <input type="name" class="form-control" id="name" />
+                </div>
+                <div class="mb-3">
+                  <label for="number" class="form-label">Contact Number</label>
+                  <input type="number" class="form-control" id="number" />
+                </div>
+                <div class="mb-3">
+                  <label for="message" class="form-label">Your Message</label>
+                  <textarea
+                    class="form-control"
+                    id="message"
+                    rows="3"
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
               </div>
-              <div class="mb-3">
-                <label for="number" class="form-label">Contact Number</label>
-                <input type="number" class="form-control" id="number" />
-              </div>
-              <div class="mb-3">
-                <label for="message" class="form-label">Your Message</label>
-                <textarea class="form-control" id="message" rows="3"></textarea>
-              </div>
-              <button type="submit" class="btn btn-primary">Submit</button>
             </form>
           </div>
         </div>
@@ -508,9 +514,26 @@
           <div class="footer-col">
             <h4>follow us</h4>
             <div class="social-links">
-              <a href="#"><i class="bi bi-facebook"></i></a>
-              <a href="#"><i class="bi bi-instagram"></i></a>
-              <a href="#"><i class="bi bi-youtube"></i></a>
+              <a
+                href="https://www.facebook.com/profile.php?id=100063456976439&mibextid=ZbWKwL"
+                target="_blank"
+              >
+                <i class="bi bi-facebook"></i>
+              </a>
+              <a
+                href="https://www.tiktok.com/@dj_professor_lk?_t=8gYtsZKtmCn&_r=1"
+                target="_blank"
+              >
+                <i class="bi bi-tiktok"></i>
+              </a>
+              <a
+                href="https://instagram.com/dj_professor_lk?igshid=OGQ5ZDc2ODk2ZA=="
+                target="_blank"
+              >
+                <i class="bi bi-instagram"></i>
+              </a>
+
+              <!-- <a href="#"><i class="bi bi-youtube"></i></a> -->
             </div>
           </div>
         </div>
